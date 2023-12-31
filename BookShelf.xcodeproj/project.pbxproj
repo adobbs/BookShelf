@@ -11,6 +11,7 @@
 		D70FB4EF2B41AC5400E375F3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D70FB4EE2B41AC5400E375F3 /* ContentView.swift */; };
 		D70FB4F12B41AC5500E375F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D70FB4F02B41AC5500E375F3 /* Assets.xcassets */; };
 		D70FB4F42B41AC5500E375F3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D70FB4F32B41AC5500E375F3 /* Preview Assets.xcassets */; };
+		D70FB4FC2B41ADC800E375F3 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = D70FB4FB2B41ADC800E375F3 /* Book.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		D70FB4EE2B41AC5400E375F3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D70FB4F02B41AC5500E375F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D70FB4F32B41AC5500E375F3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D70FB4FB2B41ADC800E375F3 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +53,7 @@
 		D70FB4EB2B41AC5400E375F3 /* BookShelf */ = {
 			isa = PBXGroup;
 			children = (
+				D70FB4FA2B41AD3F00E375F3 /* Model */,
 				D70FB4EC2B41AC5400E375F3 /* BookShelfApp.swift */,
 				D70FB4EE2B41AC5400E375F3 /* ContentView.swift */,
 				D70FB4F02B41AC5500E375F3 /* Assets.xcassets */,
@@ -65,6 +68,14 @@
 				D70FB4F32B41AC5500E375F3 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D70FB4FA2B41AD3F00E375F3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D70FB4FB2B41ADC800E375F3 /* Book.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +150,7 @@
 			files = (
 				D70FB4EF2B41AC5400E375F3 /* ContentView.swift in Sources */,
 				D70FB4ED2B41AC5400E375F3 /* BookShelfApp.swift in Sources */,
+				D70FB4FC2B41ADC800E375F3 /* Book.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
