@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  BookRowView.swift
 //  BookShelf
 //
 //  Created by Andy Dobbs on 12/31/23.
@@ -7,19 +7,20 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct BookRowView: View {
+    var book: Book
     var body: some View {
         HStack(alignment: .top) {
-            Image("9781484285718-M")
+            Image(book.mediumCoverImageName)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(height: 90)
             VStack(alignment: .leading) {
-                Text("Asynchronous Programming with SwiftUI and Combine")
+                Text(book.title)
                     .font(.headline)
-                Text("by Peter Friese")
+                Text("by \(book.author)")
                     .font(.subheadline)
-                Text("451 pages")
+                Text("\(book.pages) pages")
                     .font(.subheadline)
             }
             Spacer()
@@ -28,5 +29,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    BookRowView(book: Book.sampleBooks[2])
 }
